@@ -1,0 +1,1086 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 20px;
+    font-weight: 400;
+    
+    font-family: "Rethink Sans", sans-serif;
+    font-style: normal;
+}
+ a{
+    text-decoration: none;
+ }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    align-items: center;
+}
+
+/* navigation styling */
+
+header{
+    background-color: #F9F9F9;
+    padding: 0px 10px;
+    top: 0;
+    color: black;
+    position: sticky;
+    z-index: 1;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 30px;
+}
+.brand-logo{
+    margin: auto ,5px;
+    padding: 15px 20px;
+}
+
+.brand-logo a img{
+    width: 200px; 
+    height: auto;   
+}
+
+.menu ul{
+    display: flex;
+    gap: 20px;
+    padding: 0px 5px;
+
+}
+
+.menu ul li{
+    list-style: none;
+    padding: 5px 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+.menu ul li a:hover{
+    color: #a020a0;    
+}
+
+.menu ul li a img{
+    margin-right: 4px;
+}
+
+.nav-btn{
+    background-color: #a658a1;
+    border: none;
+    border-radius: 40PX;
+    display: inline-block;
+}
+
+.nav-btn a{
+    color: white;
+    font-size: 18px;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.burger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.plus-icon img {
+    
+    padding: 2px 3px;
+    border-radius: 50%;
+   
+    margin-right: 3px;
+    background-color: #E1E0E0;
+    
+    
+
+}
+
+.burger .line{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+  /* Hero section styling */
+  .hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    
+  }
+
+  .upper-hero{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px 20px;
+    margin-top: -90px;
+  }
+  
+  .upper-hero h2{
+    font-size: 55px;
+    font-weight: 400;
+  }
+  .hero-logo{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+  .upper-hero h2 span{
+    color: #a658a1;
+  }
+  .upper-hero h3{
+    font-size: 50px;
+    font-weight: 400;
+    color: #a658a1;
+  }
+  .upper-hero p{
+    font-size: 18px;
+    font-weight: 200;
+    max-width: 65%;
+    margin: auto;
+
+  }
+  .upper-hero p span{
+    color: #a658a1;
+    font-weight: 600;
+  }
+  /* hero section form styling */
+   .hero-form{
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 20px;
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; */
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    
+   }
+   .select-part{
+    background-color: #eddeec;
+    padding: 10px 20px;
+    border-radius: 30px;
+    
+   } 
+   .hero-form select{
+    font-size: 20px;
+    border: none;
+    padding: 5px 0px;
+    margin: 5px 10px;
+    background-color: #eddeec;
+
+
+   }
+   .search-part{
+    
+    padding: 10px 20px;
+    border-radius: 30px;
+    
+    
+   }
+   .search-part input{
+    font-size: 20px;
+    border: none;
+    padding: 20px 15px;
+    margin: 5px 5px;
+    width: 380px;
+    
+    height: auto;
+    border-radius: 30px;
+    outline: none; 
+    
+    
+   }
+   .search-part input :placeholder-shown{
+    font-size: 12px;
+   
+    
+   }
+
+   .submit-btn{
+    background-color: #a658a1;
+    border: none;
+    border-radius: 40PX;
+    display: inline-block;
+    padding: 8px 30px;
+    font-size: 25px;
+    color: white;
+    
+}
+
+.submit-btn input{
+    
+    
+    
+    text-decoration: none;
+    display: inline-block;
+}
+
+  /* hero section images styling */
+.hero-images{
+    display: flex;
+    
+    justify-content: center;
+ 
+
+}
+
+.dog-image img{
+    width: 400px;
+    margin-top: 62px;
+}
+.cat-image img{
+   width: 700px;
+   margin-left: -190px;
+}
+
+  /* advertisement-1 section form styling */
+ .advertise-1{
+    background-image: url(../images/advertisement\ 1.svg);
+    background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    margin-top: -6px;
+    
+ }
+ .advertise-content{
+    display: flex;
+    gap: 20px;
+     align-items: center;
+     text-align: left;
+     margin: 0px 20px;
+     
+ }
+ .advertise-left{
+    max-width: 60%;
+    margin: 60px 20px;
+    color: white;
+ }
+ .advertise-left p{
+    font-size: 26px;
+    font-weight: 600;
+ }
+ 
+ .advertise-right{
+    max-width: 40%;
+    margin: 60px 20px;
+    display: flex;
+    gap: 5px;
+    align-items: start;
+    justify-content: left;
+    
+
+ }
+ .advertise-btn{
+    display: flex;
+    gap: 5px;
+    background-color: black;
+    border: 1px solid white; 
+    border-radius: 10px;
+         
+ }
+ .advertise-btn img{
+    width: 30px;
+    margin-left: 10px;
+
+ }
+ .advertise-right button{
+    
+    padding: 5px 0px;
+    font-size: 12px;
+    border: none;
+    background-color: black; 
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+ }
+ .advertise-right button span{
+    padding: 5px 10px;
+    font-size: 19px;
+     }
+
+    .margin-top{
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+     .ads-section {
+        
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .ads-section h2 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        
+    }
+    
+    .ads-section .view-all {
+        position: absolute;
+        right: 20px;
+        top: 35px;
+        text-decoration: none;
+        color: #333;
+         font-size: 16px;   
+    }
+    
+    .ads-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+    
+    .ad-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: left;
+        transition: box-shadow 0.3s ease;
+        position: relative;
+    }
+    .cardicon{
+        position: absolute; 
+        margin-top: 5px;
+        right: 7px;
+    }
+    .ad-card:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .ad-card img {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+    
+    .ad-info {
+        padding: 15px;
+    }
+    
+    .ad-info h3 {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+    .tite{
+        display: flex;
+       justify-content: space-between;
+    }
+    
+    .ad-info .location {
+        color: #888;
+        font-size: 0.9rem;
+        margin-top: -2px;
+    }
+    
+    .ad-info .price {
+        color:   #A658A1;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 2px 0;
+        
+        
+    }
+    
+    .ad-info p {
+        margin: 7px 0;
+        font-size: 12px;
+    }
+    .ad-info p strong {
+        
+        font-size: 14px;
+    }
+    
+    .details-btn {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        font-size: 12px;
+        background-color: #A658A1;
+        color: white;
+        text-align: center;
+        border: none;
+        border-radius: 40px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .details-btn:hover {
+        background-color: #a020a0;
+    }
+
+    /* latest meowoof ads styling */
+
+    .meowoof-back{
+        background-image: url(images/advertisement\ 1.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 35px 0px;
+        margin-top: 80px;
+    }
+    .meowoof-back h2{
+        padding: 20px 0px;
+    }
+    .meowoof-back a{
+        padding: 20px 0px;
+    }
+    .meowoof-back .container{
+        background-color: #eddeec;
+        border-radius: 30px;
+    }
+
+    .alert-btn {
+        
+       
+        padding: 10px 70px;
+        background-color: #A658A1;
+        color: white;
+        text-align: center;
+        border: none;
+        border-radius: 40px;
+        margin-top: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+      /* latest blog ads styling */
+       .blog-card img{
+        padding: 0;
+       }
+       .blog-card p{
+        padding: 0px 5px;
+        margin-top: -10px;
+        color: #A658A1;
+       }
+       .blog-card h3{
+        font-size: 17px;
+       }
+       .blog-card a{
+        font-size: 12px;
+        color: grey;
+        
+       }
+       .blog-card a i{
+        margin-right: 5px;
+       }
+
+
+
+       /* popular dog breed styling */
+       .breed-card{
+        text-align: center;
+        
+       }
+
+    
+
+       .breed-card h3{
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: -5px;
+        
+       }
+       .breed-card .cardicon img{
+        padding: 8px 0px 8px 8px;
+       }
+
+       .services-section {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #f9f9f9;
+        
+    }
+    
+    .services-section h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: #333;
+    }
+    
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .service-card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 20px 20px  20px 50px ;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        position: relative;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    
+    .service-card .icon {
+        position: absolute;
+        top: -30px;
+        left: 20px;
+        
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px 10px 50px 10px ;
+        box-shadow: 0px 17.31px 34.61px 0px #A6C0FE1A;
+    }
+    
+    
+    .service-card .icon i {
+        font-size: 25px;
+        color: #eddeec;
+        margin: 10px;
+    }   
+    .service-card h3 {
+        font-size: 1.1rem;
+        margin-top: 40px;
+        color: #333;
+        
+    }
+    
+    .service-card p {
+        font-size: 0.8rem;
+        color: #666;
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+    
+     /* advertisement-1 section form styling */
+ .advertise-2{
+    background-image: url(../images/advertisement\ 1.svg);
+    background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 200px;
+    
+ }
+ .advertise2-content{
+    display: flex;
+    gap: 20px;
+     align-items: center;
+     text-align: left;
+     margin: 0px 20px;
+     
+     
+     
+ }
+ .advertise2-left{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 120px 20px;
+    color: white;
+ }
+ .advertise2-left p{
+    font-size: 24px;
+    font-weight: 600;
+ }
+ .advertise2-lower{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    color: white;
+ }
+ .advertise2-btn{
+    display: flex;
+    gap: 5px;
+    background-color: black;
+    border: 1px solid white; 
+    border-radius: 10px;
+         
+ }
+ .advertise2-btn img{
+    width: 30px;
+    margin-left: 10px;
+
+ }
+ .advertise2-left button{
+    
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    background-color: black; 
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-align: left;
+ }
+ .advertise2-left button span{
+    padding: 5px 0px;
+    font-size: 24px;
+     }
+     
+    
+     
+ .advertise2-right{
+    max-width: 50%;
+    
+    display: flex;
+    gap: 5px;
+    align-items: start;
+    justify-content: left;
+    
+
+ }
+ .advertise2-right img{
+    width: 100%;
+    height: auto;
+    margin-top: -200px;
+ } 
+
+ footer{
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/Footer\ →\ Section.svg);
+    background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+ }
+
+     @media (max-width: 1024px) {
+        .advertise-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+    
+        .advertise-left, .advertise-right {
+            max-width: 80%;
+            margin: 40px 10px;
+        }
+    
+        .advertise-right {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+     
+    
+
+@media (max-width: 992px) {
+    /* Adjust hero section for tablets */
+    .upper-hero h2 {
+        font-size: 45px;
+    }
+    .upper-hero h3 {
+        font-size: 40px;
+    }
+
+    .upper-hero p {
+        font-size: 16px;
+    }
+    .search-part input {
+        width: 300px; /* Adjust search input width */
+    }
+    .dog-image img {
+        width: 300px;
+        margin-top: 40px;
+    }
+    .cat-image img {
+        width: 500px;
+        margin-left: -150px;
+    }
+    .advertise2-left p {
+        font-size: 22px;
+    }
+
+    .advertise2-left button span {
+        font-size: 20px;
+    }
+
+    .advertise2-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .advertise2-right img {
+        margin-top: -100px;
+    }
+
+}
+
+@media (max-width: 930px) {
+     /* navbar responsive */
+
+     .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #F9F9F9;
+    
+    }
+    .menu ul{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        
+    }
+    .menu ul li{
+        margin: 0px 0;
+        text-align: center;
+        
+    }
+
+    .burger{
+        display: flex;
+        margin-right: 10px;
+    }
+    .menu.active{
+        display: flex;
+    }
+    .nav-btn{
+        max-width: 30%;
+        margin: auto;
+    }
+    .nav-btn a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 8px 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* navbar responsive */
+    header{
+        background-color: #F9F9F9;
+        padding: 0px 0px;
+        top: 0;
+        color: black;
+        position: sticky;
+        z-index: 1;
+        
+    
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px 10px;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top:  70px;
+        left: 0;
+        width: 100%;
+        background-color: #F9F9F9;
+    
+    }
+    .menu ul{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        
+    }
+    .menu ul li{
+        margin: 0px 0;
+        text-align: center;
+        
+    }
+
+    .burger{
+        display: flex;
+        margin-right: 10px;
+    }
+    .menu.active{
+        display: flex;
+    }
+    .nav-btn{
+        max-width: 30%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .nav-btn a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 8px 20px; /* Adjust padding for smaller screens */
+    }
+    .brand-logo{
+        margin-left: -8px;
+    }
+    /* Adjust hero section for small tablets */
+    .hero-logo{
+        display: none;
+    }
+    .upper-hero{
+        margin-top: 10px;
+    }
+    .upper-hero h2 {
+        font-size: 35px;
+    }
+    .upper-hero h3 {
+        font-size: 30px;
+    }
+    .upper-hero p {
+        font-size: 14px;
+    }
+    .search-part input {
+        width: 250px; /* Further adjust search input width */
+    }
+    .dog-image img {
+        width: 250px;
+        margin-top: 28px;
+    }
+    .cat-image img {
+        width: 400px;
+        margin-left: -120px;
+        margin-top: 5px;
+    }
+
+    .advertise-left, .advertise-right {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .advertise-left p {
+        font-size: 22px;
+    }
+
+    .advertise-right button {
+        font-size: 14px;
+    }
+
+    .advertise-right button span {
+        font-size: 17px;
+    }
+    
+    .advertise2-content{
+        flex-direction: column;
+        
+    }
+    .advertise2-left {
+        width: 100%;
+        margin:  50px 0px;
+        
+    }
+    .advertise2-lower{
+        flex-direction: column;
+        align-items: center;
+        
+        gap: 5px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .advertise2-left button span {
+        font-size: 18px;
+    }
+
+    .advertise2-btn {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .advertise2-right img {
+        margin-top: -40px;
+        margin: 20px 0px;
+    }
+    .advertise-2{
+        margin-top: -50px;
+    }   
+
+}
+
+@media (max-width: 576px) {
+    /* Adjust hero section for mobile devices */
+    .upper-hero h2 {
+        font-size: 28px;
+    }
+    .upper-hero h3 {
+        font-size: 24px;
+    }
+    .upper-hero p {
+        font-size: 12px;
+    }
+    .hero-form {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .select-part, .search-part, .submit-btn {
+        width: 100%; /* Make form elements full width */
+        margin-bottom: 10px;
+    }
+    .search-part input {
+        width: 100%; /* Full width on mobile */
+        margin: 5px 0;
+    }
+    .dog-image img {
+        width: 200px;
+        margin-top: 18px;
+    }
+    .cat-image img {
+        width: 300px;
+        margin-left: -70px;
+        margin-top: -3px;
+    }
+}
+@media (max-width: 480px) {
+    .nav-btn a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 6px 15px; /* Adjust padding for smaller screens */
+        
+        
+    }
+    .brand-logo a img{
+        width: 100px; 
+        height: auto;   
+    }
+    /* Further adjustments for very small devices */
+    .upper-hero h2 {
+        font-size: 24px;
+    }
+    .upper-hero h3 {
+        font-size: 20px;
+    }
+   
+    .upper-hero p{
+        font-size: 16px;
+        font-weight: 200;
+        max-width: 100%;
+        margin: auto;
+    
+      }
+      .search-part{
+        max-width: 100%;
+       
+      }
+      .select-part{
+        max-width: 100%;
+        
+      }
+      .submit-btn{
+        max-width: 100%;
+        padding: 15px 120px;
+      }
+      
+    .dog-image img {
+        width: 150px;
+        margin-top: 15px;
+    }
+    .cat-image img {
+        width: 250px;
+    }
+    .advertise-left p {
+        font-size: 18px;
+    }
+
+    .advertise-right button {
+        font-size: 10px;
+        padding: 4px 0px;
+    }
+
+    .advertise-right button span {
+        font-size: 14px;
+    }
+
+    .advertise-btn img {
+        width: 20px;
+    }
+
+    .ads-section h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        
+    }
+    
+    .ads-section .view-all {
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        text-decoration: none;
+        color: #333;
+         font-size: 12px;   
+    }
+    .advertise2-left p {
+        font-size: 18px;
+    }
+
+    .advertise2-left button span {
+        font-size: 16px;
+    }
+
+    .advertise2-btn {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .advertise2-right img {
+        margin-top: -60px;
+    }
+}
+@media (max-width: 399px) {
+    .advertise2-left p {
+        font-size: 16px;
+    }
+
+    .advertise2-left button span {
+        font-size: 14px;
+    }
+
+    .advertise2-btn {
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    .advertise2-right img {
+        margin-top: -40px;
+
+    }
+    .submit-btn{
+        max-width: 100%;
+        padding: 15px 100px;
+      }
+}
+
+
+
+
+
+
+
